@@ -1,0 +1,7 @@
+<%= form_tag products_path, method: :get do %>
+
+  <% @products.each do |p| %> 
+  
+  <%= p.name %>
+  <% end %>
+<% end %>
