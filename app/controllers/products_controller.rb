@@ -4,7 +4,6 @@ class ProductsController< ApplicationController
   end
   
   def add
-    @item = Item.find(params[:id])
-    cart << @item.id
+    cart << params[:product]
   end
 end
