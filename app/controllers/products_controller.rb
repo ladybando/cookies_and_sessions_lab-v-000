@@ -1,8 +1,6 @@
 class ProductsController< ApplicationController
   def index
-    
-    @items = Products.create(params[:name])
-    raise params.inspect
+
   end
   
   def add
